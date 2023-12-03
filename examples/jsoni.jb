@@ -1,0 +1,8 @@
+tumia jsoni
+
+k = {
+        "a": "apple",
+        "b": "banana"
+    }
+
+j = jsoni.enkodi(k)

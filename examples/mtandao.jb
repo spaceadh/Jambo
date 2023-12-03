@@ -1,0 +1,53 @@
+tumia mtandao
+tumia jsoni
+
+// package body
+pakeji sarufi {
+
+    //file="./config.json";
+
+        // initialize function
+        andaa = unda() {
+            //config = fungua() // read passwords from json file
+            //configString = config.soma()
+
+            // configDict = jsoni.dikodi(configString) // convert it to a dict
+            clientID = 'Nie1izCJzwHVR7uY3kBOdavpg7fQ8d8y'
+            clientSecret = 'TzdQ1aH72pjvpblr'
+
+            //  fill in params
+            params = {"client_id": clientID, "client_secret": clientSecret}
+
+            // get response
+            resp = mtandao.tuma(yuareli="https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials", mwili=params)
+            tokenDict = jsoni.dikodi(resp)
+
+            andika(tokenDict);
+
+            // extract token and make it globally available
+            @.token = tokenDict["access_token"]
+
+            // make the "Bearer <token>" globally available
+            @.Auth = "Basic" + @.token
+            }
+
+        // a method to get token
+        tokenYangu = unda() {
+                rudisha @.token
+            }
+
+        // a method to create new chatbots.
+        // the data should be a dict
+        tengenezaChatbot = unda(data) {
+                majibu = mtandao.tuma(yuareli="https://api.sarufi.io/chatbot", vichwa={"Authorization": @.Auth}, mwili = data)
+                rudisha majibu
+            }
+
+        // a method to get all available chatbots
+        pataChatbotZote = unda() {
+                majibu = mtandao.peruzi(yuareli="https://api.sarufi.io/chatbots", vichwa={"Authorization": @.Auth})
+                rudisha majibu
+            }
+    }
+
+    sarufi.andaa()

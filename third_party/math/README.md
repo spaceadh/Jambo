@@ -8,11 +8,11 @@ This package provides various mathematical functions and constants implemented i
 ## Usage
 To use the `pakeji hesabu` package follow the steps below:
 
-1. Copy the `hesabu.nr` file and any required third-party package files into the same directory as your project.
+1. Copy the `hesabu.jb` file and any required third-party package files into the same directory as your project.
 
-2. Ensure that the package file names end with the `.nr` extension and match the package names. For example, if the package name is `hesabu`, the corresponding file name should be `hesabu.nr`.
+2. Ensure that the package file names end with the `.jb` extension and match the package names. For example, if the package name is `hesabu`, the corresponding file name should be `hesabu.jb`.
 
-3. You can directly import the `hesabu.nr` package and any required third-party packages in your Nuru code using the `tumia` keyword. For example:
+3. You can directly import the `hesabu.jb` package and any required third-party packages in your Nuru code using the `tumia` keyword. For example:
 
    ```nuru
    tumia "hesabu"

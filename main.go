@@ -33,7 +33,7 @@ var (
 	%s: Kufahamu toleo la Jambo
 `,
 		styles.HelpStyle.Bold(true).Render("jambo"),
-		styles.HelpStyle.Bold(true).Render("jambo jinaLaFile.nr"),
+		styles.HelpStyle.Bold(true).Render("jambo jinaLaFile.jb"),
 		styles.HelpStyle.Bold(true).Render("jambo --nyaraka"),
 		styles.HelpStyle.Bold(true).Render("jambo --toleo")))
 )
@@ -65,16 +65,16 @@ func main() {
 
 		file := args[1]
 
-		if strings.HasSuffix(file, "nr") || strings.HasSuffix(file, ".sw") {
+		if strings.HasSuffix(file, "jb") || strings.HasSuffix(file, ".sw") {
 			contents, err := os.ReadFile(file)
 			if err != nil {
-				fmt.Println(styles.ErrorStyle.Render("Error: Jambo imeshindwa kusoma faili: ", args[1]))
+				fmt.Println(styles.ErrorStyle.Render("Error: Jambo halipati faili liitwalo : ", args[1]))
 				os.Exit(0)
 			}
 
 			repl.Read(string(contents))
 		} else {
-			fmt.Println(styles.ErrorStyle.Render("'"+file+"'", "sii faili sahihi. Tumia faili la '.nr' au '.sw'"))
+			fmt.Println(styles.ErrorStyle.Render("'"+file+"'", "sii faili sahihi. Tumia faili la '.jb' au '.sw'"))
 			os.Exit(0)
 		}
 

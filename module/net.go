@@ -2,6 +2,8 @@ package module
 
 import (
 	"bytes"
+	"fmt"
+	"encoding/base64"
 	"encoding/json"
 	"io/ioutil"
 	"net/http"
@@ -14,6 +16,62 @@ var NetFunctions = map[string]object.ModuleFunction{}
 func init() {
 	NetFunctions["peruzi"] = getRequest
 	NetFunctions["tuma"] = postRequest
+	NetFunctions["buffer"] = generateAuth
+	NetFunctions["password"] = password
+}
+// generateAuth is a function that generates an authorization string using consumerKey and consumerSecret.
+func generateAuth(args []object.Object, defs map[string]object.Object) object.Object {
+	if len(args) != 2 {
+		return &object.Error{Message: "generateAuth function requires exactly two arguments: consumerKey and consumerSecret"}
+	}
+
+	consumerKey, ok := args[0].(*object.String)
+	if !ok {
+		return &object.Error{Message: "generateAuth function requires a string argument for consumerKey"}
+	}
+
+	consumerSecret, ok := args[1].(*object.String)
+	if !ok {
+		return &object.Error{Message: "generateAuth function requires a string argument for consumerSecret"}
+	}
+
+	// Concatenate consumerKey and consumerSecret with a colon
+	authString := consumerKey.Value + ":" + consumerSecret.Value
+
+	// Encode the concatenated string to base64
+	encodedAuth := base64.StdEncoding.EncodeToString([]byte(authString))
+
+	return &object.String{Value: encodedAuth}
+}
+
+// password is a function that generates an authorization string using businessCode, passkey, and timestamp.
+func password(args []object.Object, defs map[string]object.Object) object.Object {
+	if len(args) != 3 {
+		return &object.Error{Message: "password function requires exactly three arguments: businessCode, passkey, and timestamp"}
+	}
+
+	businessCode, ok := args[0].(*object.String)
+	if !ok {
+		return &object.Error{Message: "password function requires a string argument for businessCode"}
+	}
+
+	passkey, ok := args[1].(*object.String)
+	if !ok {
+		return &object.Error{Message: "password function requires a string argument for passkey"}
+	}
+
+	timestamp, ok := args[2].(*object.String)
+	if !ok {
+		return &object.Error{Message: "password function requires a string argument for timestamp"}
+	}
+
+	// Concatenate businessCode, passkey, and timestamp with a colon using fmt.Sprintf
+	authString := fmt.Sprintf("%s+%s+%s", businessCode.Value, passkey.Value, timestamp.Value)
+
+	// Encode the concatenated string to base64
+	encodedAuth := base64.StdEncoding.EncodeToString([]byte(authString))
+
+	return &object.String{Value: encodedAuth}
 }
 
 func getRequest(args []object.Object, defs map[string]object.Object) object.Object {

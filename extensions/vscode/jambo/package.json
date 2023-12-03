@@ -1,0 +1,42 @@
+{
+    "name": "jambo",
+    "displayName": "Jambo",
+    "description": "Jambo Programming Language",
+    "version": "0.0.3",
+    "engines": {
+        "vscode": "^1.74.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "publisher": "VictorAlvinWachira",  
+    "repository": {   
+        "type": "git",
+        "url": "https://github.com/spaceadh/Jambo.git"
+    },
+    "license": "MIT",  
+
+    "contributes": {
+        "languages": [
+            {
+                "id": "jambo",
+                "aliases": [
+                    "Jambo Programming Language",
+                    "jambo"
+                ],
+                "extensions": [
+                    ".jb",
+                    ".sw"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "jambo",
+                "scopeName": "source.jb",
+                "path": "./syntaxes/jambo.tmLanguage.json"
+            }
+        ]
+    }
+}

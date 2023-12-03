@@ -1,14 +1,14 @@
-<h1 align="center">NURU🔥PROGRAMMING🔥LANGUAGE</h1>
+<h1 align="center">Jambo🔥PROGRAMMING🔥LANGUAGE</h1>
 <p align="center">
-    <a href="https://github.com/AvicennaJr/Nuru"><img alt="Nuru Programming Language" src="https://img.shields.io/badge/Nuru-Programming%20Language-yellow"></a>
-    <a href="https://github.com/AvicennaJr/Nuru"><img alt="Nuru Programming Language" src="https://img.shields.io/badge/platform-Linux | Windows | Android-green.svg"></a>
-    <a href="https://github.com/AvicennaJr/Nuru"><img alt="Nuru Programming Language" src="https://img.shields.io/github/last-commit/AvicennaJr/Nuru"></a>
+    <a href="https://github.com/spaceadh/Jambo"><img alt="Nuru Programming Language" src="https://img.shields.io/badge/Nuru-Programming%20Language-yellow"></a>
+    <a href="https://github.com/spaceadh/Jambo"><img alt="Nuru Programming Language" src="https://img.shields.io/badge/platform-Linux | Windows | Android-green.svg"></a>
+    <a href="https://github.com/spaceadh/Jambo"><img alt="Nuru Programming Language" src="https://img.shields.io/github/last-commit/AvicennaJr/Nuru"></a>
 <br>
-    <a href="https://github.com/AvicennaJr/Nuru"><img alt="Nuru Programming Language" src="https://img.shields.io/github/downloads/avicennajr/nuru/total"></a>
+    <a href="https://github.com/spaceadh/Jambo"><img alt="Nuru Programming Language" src="https://img.shields.io/github/downloads/avicennajr/nuru/total"></a>
     <a href="https://github.com/spaceadh/Jambo/releases"><img alt="Nuru Programming Language" src="https://img.shields.io/github/v/release/avicennajr/nuru?include_prereleases"></a>
-    <a href="https://github.com/AvicennaJr/Nuru"><img alt="Nuru Programming Language" src="https://img.shields.io/github/actions/workflow/status/AvicennaJr/Nuru/tests.yml?style=plastic"></a>
+    <a href="https://github.com/spaceadh/Jambo"><img alt="Nuru Programming Language" src="https://img.shields.io/github/actions/workflow/status/AvicennaJr/Nuru/tests.yml?style=plastic"></a>
 <br>
-    <a href="https://github.com/AvicennaJr/Nuru"><img alt="Nuru Programming Language" src="https://img.shields.io/github/stars/AvicennaJr/Nuru?style=social"></a>
+    <a href="https://github.com/spaceadh/Jambo"><img alt="Nuru Programming Language" src="https://img.shields.io/github/stars/AvicennaJr/Nuru?style=social"></a>
 </p>
 A Swahili Programming Language of its kind built from the ground up.
 
@@ -277,15 +277,15 @@ andika(mtu["kabila"]); // output = Mnyakusa
 
 // You can reassign values
 
-mtu["jina"] = "Avicenna"
+mtu["jina"] = "Victor Alvin"
 
-andika(mtu["jina"]) // output = Avicenna
+andika(mtu["jina"]) // output = Victor Alvin
 
 // You can also add new values like this:
 
 mtu["anapoishi"] = "Dar Es Salaam"
 
-andika(mtu) // output = {"jina": "Avicenna", "kabila": "Mnyakusa", "anapoishi": "Dar Es Salaam"}
+andika(mtu) // output = {"jina": "Victor Alvin", "kabila": "Mnyakusa", "anapoishi": "Dar Es Salaam"}
 
 // You can also add two Dictionaries
 
@@ -293,7 +293,7 @@ kazi = {"kazi": "jambazi"}
 
 mtu = mtu + kazi
 
-andika(mtu) // output = {"jina": "Avicenna", "kabila": "Mnyakusa", "anapoishi": "Dar Es Salaam", "kazi": "jambazi"}
+andika(mtu) // output = {"jina": "Victor Alvin", "kabila": "Mnyakusa", "anapoishi": "Dar Es Salaam", "kazi": "jambazi"}
 ```
 
 ### For Loops
@@ -340,10 +340,10 @@ Kindly Note that everything should be placed in a single line. Here's an example
 ```
 ### Running From File
 
-To run a Nuru script, write the `nuru` command followed by the name of the file with a `.nr` or `.sw` extension:
+To run a Nuru script, write the `nuru` command followed by the name of the file with a `.jb` or `.sw` extension:
 
 ```
-nuru myFile.nr
+nuru myFile.jb
 ```
 
 ## Issues
@@ -372,4 +372,4 @@ Nuru has a passionate community, join us on [Telegram](https://t.me/NuruProgramm
 
 ## Authors
 
-Nuru Programming Language has been authored and being actively maintained by [Avicenna](https://github.com/AvicennaJr)
+Jambo Programming Language has been authored and being actively maintained by [Victor Alvin](https://github.com/spaceadh)

@@ -14,6 +14,7 @@ func init() {
 	TimeFunctions["hasahivi"] = now
 	TimeFunctions["lala"] = sleep
 	TimeFunctions["tangu"] = since
+	TimeFunctions["timestamp"] = timestamp
 }
 
 func now(args []object.Object, defs map[string]object.Object) object.Object {
@@ -46,6 +47,18 @@ func sleep(args []object.Object, defs map[string]object.Object) object.Object {
 
 	return nil
 }
+
+func timestamp(args []object.Object, defs map[string]object.Object) object.Object {
+    if len(args) != 0 || len(defs) != 0 {
+        return &object.Error{Message: "hatuhitaji hoja kwenye timestamp"}
+    }
+
+    tn := time.Now()
+    timeString := tn.Format("20060102150405")
+
+    return &object.String{Value: timeString}
+}
+
 
 func since(args []object.Object, defs map[string]object.Object) object.Object {
 	if len(defs) != 0 {
