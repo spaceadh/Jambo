@@ -1,6 +1,6 @@
-# Identifiers in Jambo
+# Identifiers in Nuru
 
-Identifiers are used to name variables, functions, and other elements in your Jambo code. This page covers the rules and best practices for creating identifiers in Jambo.
+Identifiers are used to name variables, functions, and other elements in your Nuru code. This page covers the rules and best practices for creating identifiers in Nuru.
 
 ## Syntax Rules
 
@@ -28,4 +28,4 @@ When choosing identifiers, it's important to follow best practices to ensure you
 - Follow a consistent naming convention, such as camelCase (myVariableName) or snake_case (my_variable_name).
 - Avoid using single-letter variable names, except for commonly accepted cases like loop counters (i, j, k).
 
-By following these best practices when creating identifiers, you will make your Jambo code more readable and maintainable for yourself and others.
+By following these best practices when creating identifiers, you will make your Nuru code more readable and maintainable for yourself and others.

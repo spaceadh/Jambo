@@ -1,4 +1,4 @@
-# HTTP with Jambo
+# HTTP with Nuru
 
 You can access the internet via http protocol using the `mtandao` module.
 

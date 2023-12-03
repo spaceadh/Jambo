@@ -2,13 +2,13 @@ VERSION=0.5.0-alpha
 
 build_linux:
 	@echo 'building linux binary...'
-	env GOOS=linux GOARCH=amd64 go build -ldflags="-s -w" -o jambo
+	env GOOS=linux GOARCH=amd64 go build -ldflags="-s -w" -o nuru
 	@echo 'shrinking binary...'
-	./upx --brute jambo
+	./upx --brute nuru
 	@echo 'zipping build....'
-	tar -zcvf nuru_linux_amd64_v${VERSION}.tar.gz jambo
+	tar -zcvf nuru_linux_amd64_v${VERSION}.tar.gz nuru
 	@echo 'cleaning up...'
-	rm jambo
+	rm nuru
 
 build_windows:
 	@echo 'building windows executable...'
@@ -18,24 +18,24 @@ build_windows:
 
 build_mac:
 	@echo 'building mac binary...'
-	env GOOS=darwin GOARCH=amd64 go build -ldflags="-s -w" -o jambo
+	env GOOS=darwin GOARCH=amd64 go build -ldflags="-s -w" -o nuru
 	@echo 'shrinking binary...'
-	./upx --brute jambo
+	./upx --brute nuru
 	@echo 'zipping build...'
-	tar -zcvf nuru_mac_amd64_v${VERSION}.tar.gz jambo
+	tar -zcvf nuru_mac_amd64_v${VERSION}.tar.gz nuru
 	@echo 'cleaning up...'
-	rm jambo
+	rm nuru
 
 build_android:
 	@echo 'building android binary'
-	env GOOS=android GOARCH=arm64 go build -ldflags="-s -w" -o jambo
+	env GOOS=android GOARCH=arm64 go build -ldflags="-s -w" -o nuru
 	@echo 'zipping build...'
-	tar -zcvf nuru_android_arm64_v${VERSION}.tar.gz jambo
+	tar -zcvf nuru_android_arm64_v${VERSION}.tar.gz nuru
 	@echo 'cleaning up...'
-	rm jambo
+	rm nuru
 
 build_test:
-	go build -ldflags="-s -w" -o jambo
+	go build -ldflags="-s -w" -o nuru
 
 dependencies:
 	@echo 'checking dependencies...'

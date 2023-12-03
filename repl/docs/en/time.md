@@ -1,8 +1,8 @@
-# Time in Jambo
+# Time in Nuru
 
 ## Importing Time
 
-To use Time in Jambo, you first have to import the `muda` module as follows:
+To use Time in Nuru, you first have to import the `muda` module as follows:
 ```so
 tumia muda
 ```

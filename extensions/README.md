@@ -1,5 +1,5 @@
-# Jambo Extensions For Various Editors
+# Nuru Extensions For Various Editors
 
 ## [VSCODE](./vscode/)
 
-Jambo syntax highlighting on VSCode
+Nuru syntax highlighting on VSCode

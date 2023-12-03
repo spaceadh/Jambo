@@ -48,14 +48,14 @@ _testmain.go
 
 testbinaries/
 tests_random/
-jambo
+nuru
 Notes.md
 tutorials/en/*
 config.json
 *local*
 
-# For Jambo executables
-/jambo
-/Jambo
+# For Nuru executables
+/nuru
+/Nuru
 
 dist/
