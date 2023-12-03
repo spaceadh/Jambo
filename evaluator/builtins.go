@@ -7,7 +7,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/AvicennaJr/Nuru/object"
+	"github.com/spaceadh/Jambo/object"
 )
 
 var builtins = map[string]*object.Builtin{

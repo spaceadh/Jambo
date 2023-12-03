@@ -3,8 +3,8 @@ package evaluator
 import (
 	"fmt"
 
-	"github.com/AvicennaJr/Nuru/ast"
-	"github.com/AvicennaJr/Nuru/object"
+	"github.com/spaceadh/Jambo/ast"
+	"github.com/spaceadh/Jambo/object"
 )
 
 var (

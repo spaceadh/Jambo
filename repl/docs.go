@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/AvicennaJr/Nuru/evaluator"
-	"github.com/AvicennaJr/Nuru/lexer"
-	"github.com/AvicennaJr/Nuru/object"
-	"github.com/AvicennaJr/Nuru/parser"
-	"github.com/AvicennaJr/Nuru/styles"
+	"github.com/spaceadh/Jambo/evaluator"
+	"github.com/spaceadh/Jambo/lexer"
+	"github.com/spaceadh/Jambo/object"
+	"github.com/spaceadh/Jambo/parser"
+	"github.com/spaceadh/Jambo/styles"
 	"github.com/charmbracelet/bubbles/key"
 	"github.com/charmbracelet/bubbles/list"
 	"github.com/charmbracelet/bubbles/textarea"
@@ -213,7 +213,7 @@ func (pg playground) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 			// editor code
 			pg.editor = textarea.New()
 			if pg.language == "en" {
-				pg.editor.Placeholder = "Write Nuru code here..."
+				pg.editor.Placeholder = "Write Jambo code here..."
 			} else {
 				pg.editor.Placeholder = "Andika code yako hapa..."
 			}

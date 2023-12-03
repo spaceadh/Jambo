@@ -66,9 +66,9 @@ body:
   - type: input
     id: version
     attributes:
-      label: Nuru version
+      label: Jambo version
       description: |
-        Please make sure to use the latest version of Nuru before reporting any issues as it may have already been fixed.
+        Please make sure to use the latest version of Jambo before reporting any issues as it may have already been fixed.
     validations:
       required: true
 

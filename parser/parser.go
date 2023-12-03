@@ -3,9 +3,9 @@ package parser
 import (
 	"fmt"
 
-	"github.com/AvicennaJr/Nuru/ast"
-	"github.com/AvicennaJr/Nuru/lexer"
-	"github.com/AvicennaJr/Nuru/token"
+	"github.com/spaceadh/Jambo/ast"
+	"github.com/spaceadh/Jambo/lexer"
+	"github.com/spaceadh/Jambo/token"
 )
 
 const (

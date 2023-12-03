@@ -3,7 +3,7 @@ package parser
 import (
 	"fmt"
 
-	"github.com/AvicennaJr/Nuru/ast"
+	"github.com/spaceadh/Jambo/ast"
 )
 
 func (p *Parser) parseAssignmentExpression(exp ast.Expression) ast.Expression {

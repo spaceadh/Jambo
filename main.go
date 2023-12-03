@@ -5,8 +5,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/AvicennaJr/Jambo/repl"
-	"github.com/AvicennaJr/Jambo/styles"
+	"github.com/spaceadh/Jambo/repl"
+	"github.com/spaceadh/Jambo/styles"
 	"github.com/charmbracelet/lipgloss"
 )
 

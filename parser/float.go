@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/AvicennaJr/Nuru/ast"
+	"github.com/spaceadh/Jambo/ast"
 )
 
 func (p *Parser) parseFloatLiteral() ast.Expression {

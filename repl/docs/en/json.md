@@ -1,6 +1,6 @@
-# JSON in Nuru
+# JSON in Jambo
 
-Nuru also makes it easy to deal with JSON.
+Jambo also makes it easy to deal with JSON.
 
 ## Import JSONI
 

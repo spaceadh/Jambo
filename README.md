@@ -1,14 +1,14 @@
 <h1 align="center">NURU🔥PROGRAMMING🔥LANGUAGE</h1>
 <p align="center">
-    <a href="https://github.com/AvicennaJr/Nuru"><img alt="Nuru Programming Language" src="https://img.shields.io/badge/Nuru-Programming%20Language-yellow"></a>
-    <a href="https://github.com/AvicennaJr/Nuru"><img alt="Nuru Programming Language" src="https://img.shields.io/badge/platform-Linux | Windows | Android-green.svg"></a>
-    <a href="https://github.com/AvicennaJr/Nuru"><img alt="Nuru Programming Language" src="https://img.shields.io/github/last-commit/AvicennaJr/Nuru"></a>
+    <a href="https://github.com/spaceadh/Jambo"><img alt="Jambo Programming Language" src="https://img.shields.io/badge/Jambo-Programming%20Language-yellow"></a>
+    <a href="https://github.com/spaceadh/Jambo"><img alt="Jambo Programming Language" src="https://img.shields.io/badge/platform-Linux | Windows | Android-green.svg"></a>
+    <a href="https://github.com/spaceadh/Jambo"><img alt="Jambo Programming Language" src="https://img.shields.io/github/last-commit/AvicennaJr/Jambo"></a>
 <br>
-    <a href="https://github.com/AvicennaJr/Nuru"><img alt="Nuru Programming Language" src="https://img.shields.io/github/downloads/avicennajr/nuru/total"></a>
-    <a href="https://github.com/AvicennaJr/Nuru/releases"><img alt="Nuru Programming Language" src="https://img.shields.io/github/v/release/avicennajr/nuru?include_prereleases"></a>
-    <a href="https://github.com/AvicennaJr/Nuru"><img alt="Nuru Programming Language" src="https://img.shields.io/github/actions/workflow/status/AvicennaJr/Nuru/tests.yml?style=plastic"></a>
+    <a href="https://github.com/spaceadh/Jambo"><img alt="Jambo Programming Language" src="https://img.shields.io/github/downloads/avicennajr/jambo/total"></a>
+    <a href="https://github.com/spaceadh/Jambo/releases"><img alt="Jambo Programming Language" src="https://img.shields.io/github/v/release/avicennajr/jambo?include_prereleases"></a>
+    <a href="https://github.com/spaceadh/Jambo"><img alt="Jambo Programming Language" src="https://img.shields.io/github/actions/workflow/status/AvicennaJr/Jambo/tests.yml?style=plastic"></a>
 <br>
-    <a href="https://github.com/AvicennaJr/Nuru"><img alt="Nuru Programming Language" src="https://img.shields.io/github/stars/AvicennaJr/Nuru?style=social"></a>
+    <a href="https://github.com/spaceadh/Jambo"><img alt="Jambo Programming Language" src="https://img.shields.io/github/stars/AvicennaJr/Jambo?style=social"></a>
 </p>
 A Swahili Programming Language of its kind built from the ground up.
 
@@ -21,7 +21,7 @@ To get started download the executables from the release page or follow the inst
  - Download the binary:
 
 ```
-curl -O -L https://github.com/AvicennaJr/Nuru/releases/download/v0.5.15/nuru_Linux_amd64.tar.gz
+curl -O -L https://github.com/spaceadh/Jambo/releases/download/v0.5.15/nuru_Linux_amd64.tar.gz
 ```
 
   - Extract the file to make global available:
@@ -33,7 +33,7 @@ sudo tar -C /usr/local/bin -xzvf nuru_Linux_amd64.tar.gz
  - Confirm installation with:
 
 ```
-nuru -v
+jambo -v
 ```
 
 
@@ -44,13 +44,13 @@ nuru -v
     - For apple silicon mac use:
 
         ```
-        curl -O -L https://github.com/AvicennaJr/Nuru/releases/download/v0.5.15/nuru_Darwin_arm64.tar.gz
+        curl -O -L https://github.com/spaceadh/Jambo/releases/download/v0.5.15/nuru_Darwin_arm64.tar.gz
         ```
 
     - For apple intel mac use:
 
         ```
-        curl -O -L https://github.com/AvicennaJr/Nuru/releases/download/v0.5.15/nuru_Darwin_amd64.tar.gz
+        curl -O -L https://github.com/spaceadh/Jambo/releases/download/v0.5.15/nuru_Darwin_amd64.tar.gz
         ```
 
 - Extract the file to make global available:
@@ -68,7 +68,7 @@ nuru -v
 - Confirm installation with:
 
 ```
-nuru -v
+jambo -v
 ```
 
 
@@ -78,7 +78,7 @@ nuru -v
  - Download the binary with this command:
 
 ```
-curl -O -L https://github.com/AvicennaJr/Nuru/releases/download/v0.5.15/nuru_Android_arm64.tar.gz
+curl -O -L https://github.com/spaceadh/Jambo/releases/download/v0.5.15/nuru_Android_arm64.tar.gz
 ```
  - Extract the file:
 
@@ -88,22 +88,22 @@ tar -xzvf nuru_Android_arm64.tar.gz
  - Add it to path:
 
 ```
-echo "alias nuru='~/nuru'" >> .bashrc
+echo "alias jambo='~/jambo'" >> .bashrc
 ```
  - Confirm installation with:
 
 ```
-nuru -v 
+jambo -v 
 ```
 
 ### Windows
 
 - Executable:
-    - Download the Nuru zip file [Here](https://github.com/AvicennaJr/Nuru/releases/download/v0.5.15/nuru_Windows_amd64.zip)
+    - Download the Jambo zip file [Here](https://github.com/spaceadh/Jambo/releases/download/v0.5.15/nuru_Windows_amd64.zip)
     - Unzip to get the executable
     - Double click the executable
 
-- Nuru Installer
+- Jambo Installer
     > Coming Soon
 
 ### Building From Source
@@ -112,13 +112,13 @@ nuru -v
  - Run the following command:
 
 ```
-go build -o nuru main.go
+go build -o jambo main.go
 ```
  - You can optionally add the binary to $PATH as shown above
  - Confirm installtion with:
 
 ```
-nuru -v
+jambo -v
 ```
 
 ## Syntax At A Glance
@@ -126,7 +126,7 @@ nuru -v
 **NOTE**
 > There is a more detailed documentation of the language [here](https://nuruprogramming.org).
 
-Nuru, although still in its early stage, intends to be a fully functional programming language, and thus it has been baked with many features.
+Jambo, although still in its early stage, intends to be a fully functional programming language, and thus it has been baked with many features.
 
 ### Defining A Variable
 
@@ -146,7 +146,7 @@ fanya x = 3
 
 ### Comments
 
-Nuru supports both single line and multiple line comments as shown below:
+Jambo supports both single line and multiple line comments as shown below:
 
 ```
 // Single line comment
@@ -160,7 +160,7 @@ Comment
 
 ### Arithmetic Operations
 
-For now Nuru supports `+`, `-`, `/`, `*` and `%`. Nuru also provides precedence of operations using the BODMAS rule:
+For now Jambo supports `+`, `-`, `/`, `*` and `%`. Jambo also provides precedence of operations using the BODMAS rule:
 
 ```
 2 + 2 * 3 // output = 8
@@ -170,7 +170,7 @@ For now Nuru supports `+`, `-`, `/`, `*` and `%`. Nuru also provides precedence 
 
 ### Types
 
-Nuru has the following types:
+Jambo has the following types:
 
 Type      | Syntax                                    | Comments
 --------- | ----------------------------------------- | -----------------------
@@ -184,7 +184,7 @@ NULL      | `tupu`                                    | These are nil objects
 
 ### Functions
 
-This is how you define a function in Nuru:
+This is how you define a function in Jambo:
 
 ```
 jumlisha = unda(x, y) {
@@ -194,7 +194,7 @@ jumlisha = unda(x, y) {
 andika(jumlisha(3,4))
 ```
 
-Nuru also supports recursion:
+Jambo also supports recursion:
 
 ```
 fibo = unda(x) {
@@ -210,7 +210,7 @@ fibo = unda(x) {
 
 ### If Statements
 
-Nuru supports if, elif and else statements with keywords `kama`, `au kama` and `sivyo` respectively:
+Jambo supports if, elif and else statements with keywords `kama`, `au kama` and `sivyo` respectively:
 
 ```
 kama (2<1) {
@@ -224,7 +224,7 @@ kama (2<1) {
 
 ### While Loops
 
-Nuru's while loop syntax is as follows:
+Jambo's while loop syntax is as follows:
 
 ```
 i = 10
@@ -237,7 +237,7 @@ wakati (i > 0) {
 
 ### Arrays
 
-This is how you initiliaze and perform other array operations in Nuru:
+This is how you initiliaze and perform other array operations in Jambo:
 ```
 arr = []
 
@@ -266,7 +266,7 @@ andika(arr[3]) // output = 3
 
 ### Dictionaries
 
-Nuru also supports dictionaries and you can do a lot with them as follows:
+Jambo also supports dictionaries and you can do a lot with them as follows:
 ```
 mtu = {"jina": "Mojo", "kabila": "Mnyakusa"}
 
@@ -315,7 +315,7 @@ i
 
 ### Getting Input From User
 
-In Nuru you can get input from users using the `jaza()` keyword as follows:
+In Jambo you can get input from users using the `jaza()` keyword as follows:
 ```
 jina = jaza("Unaitwa nani? ") // will prompt for input
 
@@ -326,9 +326,9 @@ andika("Habari yako " + jina)
 
 ### Using The Intepreter:
 
-You can enter the intepreter by simply running the `nuru` command:
+You can enter the intepreter by simply running the `jambo` command:
 ```
-nuru
+jambo
 >>> andika("karibu")
 karibu
 >>> 2 + 2
@@ -340,15 +340,15 @@ Kindly Note that everything should be placed in a single line. Here's an example
 ```
 ### Running From File
 
-To run a Nuru script, write the `nuru` command followed by the name of the file with a `.nr` or `.sw` extension:
+To run a Jambo script, write the `jambo` command followed by the name of the file with a `.nr` or `.sw` extension:
 
 ```
-nuru myFile.nr
+jambo myFile.nr
 ```
 
 ## Issues
 
-Kindly open an [Issue](https://github.com/AvicennaJr/Nuru/issues) to make suggestions and anything else.
+Kindly open an [Issue](https://github.com/spaceadh/Jambo/issues) to make suggestions and anything else.
 
 ## Contributions
 
@@ -364,7 +364,7 @@ Clone the repo, hack it, make sure all tests are passing then submit a pull requ
 
 ## Community
 
-Nuru has a passionate community, join us on [Telegram](https://t.me/NuruProgrammingChat)
+Jambo has a passionate community, join us on [Telegram](https://t.me/NuruProgrammingChat)
 
 ## License
 
@@ -372,4 +372,4 @@ Nuru has a passionate community, join us on [Telegram](https://t.me/NuruProgramm
 
 ## Authors
 
-Nuru Programming Language has been authored and being actively maintained by [Avicenna](https://github.com/AvicennaJr)
+Jambo Programming Language has been authored and being actively maintained by [Avicenna](https://github.com/AvicennaJr)

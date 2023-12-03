@@ -1,8 +1,8 @@
 # Pakeji Hisabati (Math Package)
 
-Pakeji Hisabati is a math package written in pure Nuru by [VictorKariuki](https://github.com/VictorKariuki).
+Pakeji Hisabati is a math package written in pure Jambo by [VictorKariuki](https://github.com/VictorKariuki).
 
-This package provides various mathematical functions and constants implemented in nuru programming language. It includes methods for `trigonometric functions`, `logarithmic functions`, `array operations`, and `utility functions`.
+This package provides various mathematical functions and constants implemented in jambo programming language. It includes methods for `trigonometric functions`, `logarithmic functions`, `array operations`, and `utility functions`.
 
 
 ## Usage
@@ -12,13 +12,13 @@ To use the `pakeji hisabati` package follow the steps below:
 
 2. Ensure that the package file names end with the `.nr` extension and match the package names. For example, if the package name is `hisabati`, the corresponding file name should be `hisabati.nr`.
 
-3. You can directly import the `hisabati.nr` package and any required third-party packages in your Nuru code using the `tumia` keyword. For example:
+3. You can directly import the `hisabati.nr` package and any required third-party packages in your Jambo code using the `tumia` keyword. For example:
 
-   ```nuru
+   ```jambo
    tumia "hisabati"
    ```
    Example of calling the package methods:
-   ```nuru
+   ```jambo
    andika(hisabati.e())
 
 ## What is in

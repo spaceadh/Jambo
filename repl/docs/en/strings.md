@@ -1,6 +1,6 @@
-# Strings in Nuru
+# Strings in Jambo
 
-Strings are a sequence of characters that can represent text in the Nuru programming language. This page covers the basics of strings, their manipulation, and some built-in methods.
+Strings are a sequence of characters that can represent text in the Jambo programming language. This page covers the basics of strings, their manipulation, and some built-in methods.
 
 ## Basic Syntax
 
@@ -89,9 +89,9 @@ Output
 You can compare two strings using the == operator:
 
 ```s
-fanya a = "nuru"
+fanya a = "jambo"
 
-andika(a == "nuru") // kweli
+andika(a == "jambo") // kweli
 
 andika(a == "mambo") // sikweli
 ```
@@ -112,7 +112,7 @@ a.idadi() // 5
 This method converts a string to uppercase. It does not accept any parameters.
 
 ```s
-fanya a = "nuru"
+fanya a = "jambo"
 a.herufikubwa() // NURU
 ```
 
@@ -122,7 +122,7 @@ This method converts a string to lowercase. It does not accept any parameters.
 
 ```s
 fanya a = "NURU"
-a.herufindogo() // nuru
+a.herufindogo() // jambo
 ```
 
 ### gawa
@@ -132,17 +132,17 @@ The gawa method splits a string into an array based on a specified delimiter. If
 Example without a parameter:
 
 ```s
-fanya a = "nuru mambo habari"
+fanya a = "jambo mambo habari"
 fanya b = a.gawa()
-andika(b) // ["nuru", "mambo", "habari"]
+andika(b) // ["jambo", "mambo", "habari"]
 ```
 
 Example with a parameter:
 
 ```s
-fanya a = "nuru,mambo,habari"
+fanya a = "jambo,mambo,habari"
 fanya b = a.gawa(",")
-andika(b) // ["nuru", "mambo", "habari"]
+andika(b) // ["jambo", "mambo", "habari"]
 ```
 
-By understanding strings and their manipulation in Nuru, you can effectively work with text data in your programs.
+By understanding strings and their manipulation in Jambo, you can effectively work with text data in your programs.

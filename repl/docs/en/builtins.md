@@ -1,6 +1,6 @@
-# Built-in Functions in Nuru
+# Built-in Functions in Jambo
 
-Nuru has several built-in functions that perform specific tasks.
+Jambo has several built-in functions that perform specific tasks.
 
 ## The andika() Function
 
@@ -31,7 +31,7 @@ The `aina()` function is used to determine the type of an object. It accepts one
 
 ```s
 aina(2) // Output: "NAMBA"
-aina("Nuru") // Output: "NENO"
+aina("Jambo") // Output: "NENO"
 ```
 
 ## The fungua() Function

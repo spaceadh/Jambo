@@ -3,7 +3,7 @@ package object
 import (
 	"fmt"
 
-	"github.com/AvicennaJr/Nuru/ast"
+	"github.com/spaceadh/Jambo/ast"
 )
 
 type Package struct {

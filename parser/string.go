@@ -1,7 +1,7 @@
 package parser
 
 import (
-	"github.com/AvicennaJr/Nuru/ast"
+	"github.com/spaceadh/Jambo/ast"
 )
 
 func (p *Parser) parseStringLiteral() ast.Expression {

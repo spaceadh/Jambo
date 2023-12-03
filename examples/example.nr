@@ -1,7 +1,7 @@
 // basics
 
-jina = "Nuru"
-andika(jina) // Nuru
+jina = "Jambo"
+andika(jina) // Jambo
 
 // lists
 
@@ -101,7 +101,7 @@ salamu = unda() {
 salamu()
 
 aina(2) // Output: "NAMBA"
-aina("Nuru") // Output: "NENO"
+aina("Jambo") // Output: "NENO"
 
 
 orodha = {"jina": "Juma", "umri": 25}
@@ -314,9 +314,9 @@ jina = "avicenna"
 
 kwa i ktk jina {andika(i)}
 
-a = "nuru"
+a = "jambo"
 
-andika(a == "nuru") // kweli
+andika(a == "jambo") // kweli
 
 andika(a == "mambo") // sikweli
 
@@ -324,15 +324,15 @@ a = "mambo"
 a.idadi() // 5
 
 a = "NURU"
-a.herufindogo() // nuru
+a.herufindogo() // jambo
 
-a = "nuru mambo habari"
+a = "jambo mambo habari"
 b = a.gawa()
-andika(b) // ["nuru", "mambo", "habari"]
+andika(b) // ["jambo", "mambo", "habari"]
 
-a = "nuru,mambo,habari"
+a = "jambo,mambo,habari"
 b = a.gawa(",")
-andika(b) // ["nuru", "mambo", "habari"]
+andika(b) // ["jambo", "mambo", "habari"]
 
 a = 2
 

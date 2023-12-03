@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"strings"
 
-	"github.com/AvicennaJr/Nuru/ast"
+	"github.com/spaceadh/Jambo/ast"
 )
 
 type Function struct {

@@ -1,6 +1,6 @@
-# Files in Nuru
+# Files in Jambo
 
-Nuru's ability to deal with files is primitive, and as for now it only allows you to read contents of a file.
+Jambo's ability to deal with files is primitive, and as for now it only allows you to read contents of a file.
 
 ## Opening a File
 

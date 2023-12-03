@@ -7,11 +7,11 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/AvicennaJr/Nuru/ast"
-	"github.com/AvicennaJr/Nuru/lexer"
-	"github.com/AvicennaJr/Nuru/module"
-	"github.com/AvicennaJr/Nuru/object"
-	"github.com/AvicennaJr/Nuru/parser"
+	"github.com/spaceadh/Jambo/ast"
+	"github.com/spaceadh/Jambo/lexer"
+	"github.com/spaceadh/Jambo/module"
+	"github.com/spaceadh/Jambo/object"
+	"github.com/spaceadh/Jambo/parser"
 )
 
 var searchPaths []string

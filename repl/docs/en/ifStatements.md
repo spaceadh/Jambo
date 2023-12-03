@@ -1,6 +1,6 @@
-# Conditional Statements in Nuru
+# Conditional Statements in Jambo
 
-Conditional statements in Nuru are used to perform different actions based on different conditions. The if/else statement is a fundamental control structure that allows you to execute code based on specific conditions. This page covers the basics of if/else statements in Nuru.
+Conditional statements in Jambo are used to perform different actions based on different conditions. The if/else statement is a fundamental control structure that allows you to execute code based on specific conditions. This page covers the basics of if/else statements in Jambo.
 
 ## If Statement (Kama)
 
@@ -35,4 +35,4 @@ kama (a > 100) {
 
 In this example, the first condition a > 100 is false, and the second condition a < 10 is also false. Therefore, the code inside the sivyo block is executed, and the output is 'Thamani ya a ni 10'.
 
-By using if/else statements with the kama, au kama, and sivyo keywords, you can control the flow of your Nuru code based on different conditions.
+By using if/else statements with the kama, au kama, and sivyo keywords, you can control the flow of your Jambo code based on different conditions.

@@ -1,8 +1,8 @@
 package parser
 
 import (
-	"github.com/AvicennaJr/Nuru/ast"
-	"github.com/AvicennaJr/Nuru/token"
+	"github.com/spaceadh/Jambo/ast"
+	"github.com/spaceadh/Jambo/token"
 )
 
 func (p *Parser) parseImport() ast.Expression {

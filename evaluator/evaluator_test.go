@@ -5,9 +5,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/AvicennaJr/Nuru/lexer"
-	"github.com/AvicennaJr/Nuru/object"
-	"github.com/AvicennaJr/Nuru/parser"
+	"github.com/spaceadh/Jambo/lexer"
+	"github.com/spaceadh/Jambo/object"
+	"github.com/spaceadh/Jambo/parser"
 )
 
 func TestEvalIntegerExpression(t *testing.T) {

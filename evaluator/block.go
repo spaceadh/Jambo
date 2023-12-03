@@ -1,8 +1,8 @@
 package evaluator
 
 import (
-	"github.com/AvicennaJr/Nuru/ast"
-	"github.com/AvicennaJr/Nuru/object"
+	"github.com/spaceadh/Jambo/ast"
+	"github.com/spaceadh/Jambo/object"
 )
 
 func evalBlockStatement(block *ast.BlockStatement, env *object.Environment) object.Object {

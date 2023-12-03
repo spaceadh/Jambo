@@ -1,4 +1,4 @@
-project_name: nuru
+project_name: jambo
 before:
   hooks:
     - go mod tidy
@@ -41,7 +41,7 @@ changelog:
 nfpms:
   - maintainer: "AvicennaJr"
     homepage: "https://nuruprogramming.org"
-    description: "Nuru is a programming language built from the ground up"
+    description: "Jambo is a programming language built from the ground up"
     formats:
       - deb
     file_name_template: "{{ .ProjectName }}.{{ .Os }}-{{ .Arch }}{{ if .Arm }}v{{ .Arm }}{{ end }}"

@@ -4,7 +4,7 @@ import (
 	"math"
 	"strings"
 
-	"github.com/AvicennaJr/Nuru/object"
+	"github.com/spaceadh/Jambo/object"
 )
 
 func evalInfixExpression(operator string, left, right object.Object, line int) object.Object {

@@ -5,7 +5,7 @@ import (
 	"os/exec"
 	"strings"
 
-	"github.com/AvicennaJr/Nuru/object"
+	"github.com/spaceadh/Jambo/object"
 )
 
 var OsFunctions = map[string]object.ModuleFunction{}

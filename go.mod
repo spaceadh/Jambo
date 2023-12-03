@@ -1,4 +1,4 @@
-module github.com/AvicennaJr/Nuru
+module github.com/spaceadh/Jambo
 
 go 1.18
 

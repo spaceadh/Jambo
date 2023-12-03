@@ -1,6 +1,6 @@
-# Dictionaries in Nuru
+# Dictionaries in Jambo
 
-Dictionaries in Nuru, also known as "kamusi," are powerful and flexible data structures that store key-value pairs. This page provides a comprehensive overview of dictionaries in Nuru, including how to create, access, modify, and iterate over them.
+Dictionaries in Jambo, also known as "kamusi," are powerful and flexible data structures that store key-value pairs. This page provides a comprehensive overview of dictionaries in Jambo, including how to create, access, modify, and iterate over them.
 
 ## Creating Dictionaries
 
@@ -104,4 +104,4 @@ baiskeli
 chakula
 ```
 
-With this knowledge, you can now effectively use dictionaries in Nuru to store and manage key-value pairs, offering a flexible way to organize and access data in your programs.
+With this knowledge, you can now effectively use dictionaries in Jambo to store and manage key-value pairs, offering a flexible way to organize and access data in your programs.

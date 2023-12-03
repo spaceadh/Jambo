@@ -1,8 +1,8 @@
 package evaluator
 
 import (
-	"github.com/AvicennaJr/Nuru/ast"
-	"github.com/AvicennaJr/Nuru/object"
+	"github.com/spaceadh/Jambo/ast"
+	"github.com/spaceadh/Jambo/object"
 )
 
 func evalForInExpression(fie *ast.ForIn, env *object.Environment, line int) object.Object {

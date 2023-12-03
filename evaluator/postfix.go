@@ -1,8 +1,8 @@
 package evaluator
 
 import (
-	"github.com/AvicennaJr/Nuru/ast"
-	"github.com/AvicennaJr/Nuru/object"
+	"github.com/spaceadh/Jambo/ast"
+	"github.com/spaceadh/Jambo/object"
 )
 
 func evalPostfixExpression(env *object.Environment, operator string, node *ast.PostfixExpression) object.Object {
