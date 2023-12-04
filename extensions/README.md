@@ -2,4 +2,4 @@
 
 ## [VSCODE](./vscode/)
 
-Nuru syntax highlighting on VSCode
+Jambo syntax highlighting on VSCode

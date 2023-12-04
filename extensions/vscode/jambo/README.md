@@ -226,11 +226,11 @@ Kindly Note that everything should be placed in a single line. Here's an example
 ```
 >>> kama (x > y) {andika("X ni kubwa")} sivyo {andika("Y ni kubwa")}
 ```
-### Image from 
+### Image for MPESA API`S
 
 Image illustrating mpesa stk functionality(Authorization)
 
-https://images2.imgbox.com/4b/66/N4RmyjCc_o.png
+![MPESA API AUTHORIZATION](https://images2.imgbox.com/4b/66/N4RmyjCc_o.png)
 
 An example Authorization API executed using Jambo ☺️  
 
