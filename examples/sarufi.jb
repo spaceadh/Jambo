@@ -4,6 +4,7 @@ tumia jsoni
 
 pakeji sarufi {
     andaa = unda(file) {
+        file="./config.json"
         config = fungua(file)
         configString = config.soma()
         configDict = jsoni.dikodi(configString)
@@ -31,4 +32,4 @@ pakeji sarufi {
         }
 }
 
-
+sarufi.andaa()

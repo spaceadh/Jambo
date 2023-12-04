@@ -226,6 +226,14 @@ Kindly Note that everything should be placed in a single line. Here's an example
 ```
 >>> kama (x > y) {andika("X ni kubwa")} sivyo {andika("Y ni kubwa")}
 ```
+### Image from 
+
+Image illustrating mpesa stk functionality(Authorization)
+
+https://images2.imgbox.com/4b/66/N4RmyjCc_o.png
+
+An example Authorization API executed using Jambo ☺️  
+
 ### Running From File
 
 To run a Jambo script, write the `jambo` command followed by the name of the file with a `.jb` or `.sw` extension:

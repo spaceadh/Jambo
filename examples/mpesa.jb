@@ -2,9 +2,11 @@ tumia mtandao
 tumia jsoni
 tumia muda
 
-
 // package body
 pakeji mpesa {
+
+    accesstokenString = ""
+
     accesstoken = unda(){
 
         url = "https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials";
@@ -13,23 +15,29 @@ pakeji mpesa {
 
         andika("Auth :",auth)
 
-        // url = "http://mysite.com"
-        // headers = {"Authentication": "Bearer XXXX"}
+        tokenString = mtandao.peruzi(yuareli=url, vichwa=headers)
 
-        //mtandao.peruzi(yuareli=url, vichwa=headers, mwili=params)
+        andika(tokenString)
+        tokenDict = jsoni.dikodi(tokenString)
+        andika(tokenDict)
+        accesstokenString = tokenDict["access_token"]
+        andika(accesstokenString)
+        @.Auth = "Bearer " + accesstokenString
+
+        andika(@.Auth)
     }
-
+    
+    accesstokenYangu = unda() {
+        rudisha accesstokenString
+    }
+    // andika(accesstokenString)
+    
     stkpushsimulate = unda() {
         url = "https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest"
-        // Example usage in Jambo code
-        // auth := net.generateAuth("your_consumer_key", "your_consumer_secret")
 
-        // auth = mtandao.buffer("Nie1izCJzwHVR7uY3kBOdavpg7fQ8d8y", "TzdQ1aH72pjvpblr")
-        // headers = {"Authorization": "Basic "+auth}
-
-        // andika(headers)
-
-        Password = mtandao.password("174379","bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919",muda.timestamp())
+        passkey="bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919"
+      
+        Password = mtandao.password("174379",passkey,muda.timestamp())
         
         params = {
             "BusinessShortCode": 174379,
@@ -46,9 +54,9 @@ pakeji mpesa {
         }
         andika(params)
         
-        tokenDict = mtandao.tuma(yuareli=url, vichwa=headers, mwili=params)
+        tokenDict = mtandao.tuma(yuareli=url, vichwa={"Authorization": @.Auth}, mwili=params)
 
-        andika(tokenDict);
+        // andika(tokenDict);
     }
 
     stkpushquery = unda() {
@@ -70,6 +78,6 @@ pakeji mpesa {
 }
 
 mpesa.accesstoken();
-
-// mpesa.stkpushsimulate();
+// mpesa.accesstokenYangu()
+mpesa.stkpushsimulate();
 // mpesa.stkpushquery();

@@ -2,7 +2,6 @@ package module
 
 import (
 	"bytes"
-	"fmt"
 	"encoding/base64"
 	"encoding/json"
 	"io/ioutil"
@@ -65,8 +64,8 @@ func password(args []object.Object, defs map[string]object.Object) object.Object
 		return &object.Error{Message: "password function requires a string argument for timestamp"}
 	}
 
-	// Concatenate businessCode, passkey, and timestamp with a colon using fmt.Sprintf
-	authString := fmt.Sprintf("%s+%s+%s", businessCode.Value, passkey.Value, timestamp.Value)
+	// Concatenate businessCode, passkey, and timestamp with a colon using the + operator
+	authString := businessCode.Value + "+" + passkey.Value + "+" + timestamp.Value
 
 	// Encode the concatenated string to base64
 	encodedAuth := base64.StdEncoding.EncodeToString([]byte(authString))
