@@ -1,0 +1,4 @@
+existingFileName = "new1.txt"
+newContent = "This is the new content."
+
+andikaupya(existingFileName, newContent)

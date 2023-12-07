@@ -2,7 +2,7 @@
 
 # Jambo Programming Language Extension
 
-![Jambo Extension](https://images2.imgbox.com/f9/cf/OZJTfmlM_o.jpg)
+![Jambo Extension](https://images2.imgbox.com/41/a9/zh8o6h8p_o.png)
 
 A Kenyan Swahili Programming Language of its kind built from the ground up.
 
@@ -284,6 +284,18 @@ pakeji sarufi {
             rudisha majibu
         }
 }
+
+```
+
+### Writing a File
+
+Create a new file object with the `andikaupya` method. This will require two parameters filename and contents of the file as a string:
+
+```
+NewFileName = "new.txt"
+newContent = "This is the new content."
+
+andikaupya(NewFileName, newContent)
 
 ```
 

@@ -97,7 +97,7 @@
             "patterns": [
                 {
                     "name": "storage.type.function.jambo",
-                    "match": "\\b(unda|andika|idadi|jumla|yamwisho|sukuma|jaza|aina|fungua)\\b"
+                    "match": "\\b(unda|andika|idadi|jumla|yamwisho|sukuma|jaza|aina|fungua|andikaupya)\\b"
                 },
                 {
                     "name": "storage.type.jambo",

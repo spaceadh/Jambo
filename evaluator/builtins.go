@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"io"
 	"os"
+	"io/ioutil"
 	"strings"
 
 	"github.com/spaceadh/Jambo/object"
@@ -93,6 +94,43 @@ var builtins = map[string]*object.Builtin{
 				return &object.Error{Message: "Tumeshindwa kusoma faili"}
 			}
 			return &object.File{Filename: filename, Content: string(file)}
+		},
+	},
+	"andikaupya": {
+		Fn: func(args ...object.Object) object.Object {
+			if len(args) != 2 {
+				return newError("Samahani, tunahitaji hoja 2, wewe umeweka %d", len(args))
+			}
+
+			// Extract filename and content from arguments
+			filenameArg, contentArg := args[0], args[1]
+
+			// Check if the arguments are of the correct types
+			if filenameArg.Type() != object.STRING_OBJ || contentArg.Type() != object.STRING_OBJ {
+				return newError("Samahani, hoja za kwanza na pili zinapaswa kuwa vitambulisho (strings)")
+			}
+
+			filename := filenameArg.(*object.String).Value
+			content := contentArg.(*object.String).Value
+
+			// Check if the file exists
+			_, err := os.Stat(filename)
+			if os.IsNotExist(err) {
+				// Create the file if it doesn't exist
+				file, err := os.Create(filename)
+				if err != nil {
+					return newError(fmt.Sprintf("Samahani, tumeshindwa kuunda faili: %s", err.Error()))
+				}
+				defer file.Close()
+			}
+
+			// Save the file
+			err = ioutil.WriteFile(filename, []byte(content), 0644)
+			if err != nil {
+				return newError(fmt.Sprintf("Samahani, tumeshindwa kuandika faili: %s", err.Error()))
+			}
+
+			return &object.String{Value: fmt.Sprintf("Faili '%s' imeandikwa upya.", filename)}
 		},
 	},
 

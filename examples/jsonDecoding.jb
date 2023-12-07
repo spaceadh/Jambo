@@ -1,0 +1,8 @@
+tumia mtandao, jsoni
+url = "https://v2.jokeapi.dev/joke/Any?type=single"
+
+resp = mtandao.peruzi(url)
+
+resp = jsoni.dikodi(resp)
+
+andika(resp["joke"])
